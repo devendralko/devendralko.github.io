@@ -4,7 +4,11 @@
     "date": "2026-10-18",
     "title": "Payers are using AI to write coverage policy. Market access teams need to get there first.",
     "summary": "AI-drafted payer policies may be finalized before launch, and they can come out more restrictive than intended. That changes when and how market access teams engage.",
-    "tags": ["Market access", "Payer policy", "Launch"],
+    "tags": [
+      "Market access",
+      "Payer policy",
+      "Launch"
+    ],
     "body": [
       "A quiet shift is underway on the payer side. MMIT's 2026 market access outlook notes that health plans increasingly use AI to draft medical policies, evaluate utilization trends, and design formularies and utilization management. Because these models lean on clinical trial inclusion criteria, the resulting policies can end up more restrictive than the payer actually intended.",
       "The timing matters as much as the content. If an AI-assisted policy is drafted before approval, the window to influence it closes earlier than most launch plans assume. MMIT's experts recommend identifying the most influential payers and engaging them well ahead of launch, with access planning starting as early as Phase 1 or 2.",
@@ -13,9 +17,54 @@
       "One caution. Industry research from Day One Strategy finds that AI access in pharma is outpacing real adoption, and that data quality and governance decide whether AI investments pay off. The same holds here: AI-ready payer data (clean hierarchies, current policy text, reliable lives counts) is the foundation, not an afterthought."
     ],
     "sources": [
-      {"title": "MMIT: Market Access in 2026, Predictions on Policies, Contracting and AI", "url": "https://www.mmitnetwork.com/thought-leadership/market-access-2026-part-1/"},
-      {"title": "IQVIA: Insight-led approaches for market access and brand performance (Jul 2026)", "url": "https://www.iqvia.com/locations/united-states/blogs/2026/07/insight-led-approaches-for-market-access-and-brand-performance"},
-      {"title": "pharmaphorum: Are insights leaders seeing real commercial value from AI adoption yet? (Oct 2026)", "url": "https://pharmaphorum.com/sales-marketing/are-insights-leaders-seeing-real-commercial-value-ai-adoption-yet"}
+      {
+        "title": "MMIT: Market Access in 2026, Predictions on Policies, Contracting and AI",
+        "url": "https://www.mmitnetwork.com/thought-leadership/market-access-2026-part-1/"
+      },
+      {
+        "title": "IQVIA: Insight-led approaches for market access and brand performance (Jul 2026)",
+        "url": "https://www.iqvia.com/locations/united-states/blogs/2026/07/insight-led-approaches-for-market-access-and-brand-performance"
+      },
+      {
+        "title": "pharmaphorum: Are insights leaders seeing real commercial value from AI adoption yet? (Oct 2026)",
+        "url": "https://pharmaphorum.com/sales-marketing/are-insights-leaders-seeing-real-commercial-value-ai-adoption-yet"
+      }
+    ]
+  },
+  {
+    "slug": "2026-10-18-drug-prior-auth-is-becoming-data-infrastructure",
+    "date": "2026-10-18",
+    "title": "Drug prior authorization is becoming digital infrastructure. That is a data opportunity for access teams.",
+    "summary": "CMS's proposed rule on prior authorization for drugs pushes payers toward electronic workflows, faster decisions, and public reporting. The result is a new, structured data stream that access analytics and AI can actually use.",
+    "tags": [
+      "Prior authorization",
+      "Patient access",
+      "Policy"
+    ],
+    "body": [
+      "In April 2026 CMS proposed its Interoperability Standards and Prior Authorization for Drugs rule. As Fierce Healthcare reported, it would require payers in Medicare Advantage, Medicaid, CHIP, and ACA exchange plans to decide drug prior authorization requests within 72 hours for standard requests and 24 hours for urgent ones, publicly report approval, denial, and appeal metrics, and move to FHIR-based electronic workflows.",
+      "A contributor piece in AJMC frames this well: CMS is shifting from trimming administrative burden to rebuilding prior authorization as digital infrastructure. It extends reform to drugs under both the medical and pharmacy benefit, asks for more specific denial reasons, and notes that contracts signed in 2026 will govern performance during the 2027 compliance period.",
+      "The scale explains the urgency. AJMC cites KFF data showing Medicare Advantage insurers made 52.8 million prior authorization determinations in 2024 and denied 7.7%. Meanwhile, MMIT's 2026 outlook expects payers and pharmacies to use AI to reduce administrative work and speed prior authorization reviews.",
+      "Put those together and the picture changes for manufacturers. Prior authorization has been one of the least visible steps in the patient journey, usually seen through hub data, field anecdotes, and lagging claims. Standardized electronic transactions, deadlines, and published payer metrics create a cleaner, more consistent signal about where and why patients get stuck.",
+      "What it means for MA&R analytics teams: start building the baseline now. Map turnaround and denial patterns by payer and benefit type, connect them to payer hierarchy and covered lives, and line them up with patient services and specialty pharmacy data. When the reporting arrives, the teams with a clean baseline will be the ones who can tell real access improvement from noise, and who are ready to put AI on top of data that finally holds together."
+    ],
+    "sources": [
+      {
+        "title": "Fierce Healthcare: Proposed CMS rule would set prior auth deadlines for drugs (Apr 2026)",
+        "url": "https://www.fiercehealthcare.com/regulatory/proposed-cms-rule-would-set-prior-auth-deadlines-drugs"
+      },
+      {
+        "title": "AJMC: Prior Authorization in 2026, CMS Is Rebuilding the Operating Model (2026)",
+        "url": "https://www.ajmc.com/view/contributor-prior-authorization-in-2026-cms-is-rebuilding-the-operating-model"
+      },
+      {
+        "title": "CMS: Interoperability Standards and Prior Authorization for Drugs Proposed Rule (CMS-0062-P)",
+        "url": "https://www.cms.gov/initiatives/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-standards-prior-authorization-drugs-proposed-rule-cms-0062-p"
+      },
+      {
+        "title": "MMIT: Market Access in 2026, Predictions on Policies, Contracting and AI",
+        "url": "https://www.mmitnetwork.com/thought-leadership/market-access-2026-part-1/"
+      }
     ]
   }
 ]
