@@ -217,7 +217,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem
       <li><a href="#skills">Skills</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#notes">Notes</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
     <a class="btn btn-primary" href="#contact">Let's talk</a>
   </div>
@@ -473,15 +473,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem
 <section id="notes" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Notes</span>
-      <h2>Writing on data, access, and practical AI.</h2>
-      <p class="lede">Short pieces from the work. First posts coming soon.</p>
+      <span class="eyebrow">Blog · New post daily</span>
+      <h2>The MA&amp;R AI Brief</h2>
+      <p class="lede">A short daily read on AI adoption in biopharma Market Access &amp; Research, with sources for every post.</p>
     </div>
-    <div class="notes">
-      <div class="note"><span class="meta">Market access · Draft</span><h3>Why your payer hierarchy is the real dashboard</h3><p>Most access reporting problems start in how plans roll up, not in the visual layer.</p></div>
-      <div class="note"><span class="meta">Data quality · Draft</span><h3>Reconciling EDI 867 without losing a week</h3><p>The checks that catch most channel data breaks before anyone sees a report.</p></div>
-      <div class="note"><span class="meta">Practical AI · Draft</span><h3>Where AI saves analysts real hours</h3><p>Three workflows where an assistant pays for itself, and two where it does not yet.</p></div>
+    <div class="notes" id="latest-posts">
+      <div class="note"><span class="meta">Latest</span><h3><a href="blog.html">Read the latest post</a></h3><p>New posts arrive every morning.</p></div>
     </div>
+    <p style="margin-top:1.6rem"><a class="btn btn-ghost" href="blog.html">Read the blog →</a></p>
   </div>
 </section>
 </main>
@@ -514,5 +513,16 @@ document.getElementById('copy').addEventListener('click',e=>{
 });
 </script>
 
+<script>
+fetch('posts/posts.json',{cache:'no-store'}).then(r=>r.json()).then(ps=>{
+  ps=ps.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,3);
+  if(!ps.length)return;
+  const box=document.getElementById('latest-posts');box.replaceChildren();
+  ps.forEach(p=>{const d=document.createElement('div');d.className='note';
+    const m=document.createElement('span');m.className='meta';m.textContent=new Date(p.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+((p.tags&&p.tags[0])?' · '+p.tags[0]:'');
+    const h=document.createElement('h3');const a=document.createElement('a');a.href='blog.html#'+p.slug;a.textContent=p.title;a.style.color='inherit';a.style.textDecoration='none';h.append(a);
+    const s=document.createElement('p');s.textContent=p.summary||'';d.append(m,h,s);box.append(d);});
+}).catch(()=>{});
+</script>
 </body>
 </html>

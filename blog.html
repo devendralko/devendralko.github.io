@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The MA&amp;R AI Brief · Devendra Singh</title>
+<meta name="description" content="A daily short read on AI adoption in biopharma Market Access & Research, with sources. By Devendra Singh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F3F6F5; --surface:#FFFFFF; --ink:#0F1E1D; --muted:#566664; --line:#D6DFDC;
+  --teal:#0D5652; --teal-soft:#E1EEEC; --amber:#B9770E; --amber-soft:#FBF0DC;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0C1514; --surface:#13201F; --ink:#E5EEEC; --muted:#9AAEAB; --line:#26403D;
+  --teal:#6CC7BD; --teal-soft:#16302E; --amber:#E8AE52; --amber-soft:#2E2412; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.015em}
+p{margin:0}
+header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.8rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font:700 1rem var(--display)}
+.mono-mark{width:34px;height:34px;border-radius:9px;background:var(--teal);color:var(--bg);display:grid;place-items:center;font:700 .85rem var(--mono)}
+.back{font:500 .85rem var(--mono);color:var(--muted);text-decoration:none}
+.back:hover{color:var(--ink)}
+.eyebrow{font:500 .75rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.intro{padding-block:clamp(40px,7vw,72px) 32px;display:grid;gap:1rem}
+.intro h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.04;font-weight:800}
+.intro h1 em{font-style:normal;color:var(--teal)}
+.intro .lede{color:var(--muted);max-width:62ch}
+.note{font:400 .85rem/1.5 var(--body);color:var(--muted);border-left:2px solid var(--amber);padding-left:.8rem;max-width:62ch}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);padding-block:16px 80px;align-items:start}
+@media (max-width:860px){.layout{grid-template-columns:1fr}}
+article.post{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(1.4rem,4vw,2.4rem);display:grid;gap:1.1rem;min-width:0}
+.meta{font:500 .75rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem 1rem}
+.meta .tag{color:var(--amber)}
+article.post h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.15}
+.post .summary{font-size:1.12rem;color:var(--ink);font-weight:600}
+.post .body{display:grid;gap:1rem;color:var(--ink);max-width:68ch}
+.sources{border-top:1px solid var(--line);padding-top:1rem;display:grid;gap:.5rem}
+.sources h3{font:500 .75rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sources ol{margin:0;padding-left:1.2rem;display:grid;gap:.35rem;font-size:.95rem}
+.sources a{overflow-wrap:anywhere}
+.share{display:flex;flex-wrap:wrap;gap:.5rem}
+.share a,.share button{font:600 .85rem var(--body);padding:.45rem .9rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer}
+aside{display:grid;gap:.8rem;position:sticky;top:80px}
+aside h3{font:500 .75rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive{list-style:none;margin:0;padding:0;display:grid}
+.archive li a{display:grid;gap:.15rem;padding:.75rem 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.archive li a[aria-current="true"] .t{color:var(--teal)}
+.archive .d{font:500 .72rem var(--mono);color:var(--muted)}
+.archive .t{font:600 .95rem/1.35 var(--body)}
+.empty{color:var(--muted)}
+footer{border-top:1px solid var(--line);font:500 .78rem var(--mono);color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;padding-block:1.4rem}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mono-mark">DS</span>Devendra Singh</a>
+  <a class="back" href="index.html">← Back to home</a>
+</div></header>
+
+<main class="wrap">
+  <section class="intro">
+    <span class="eyebrow">Blog · New post daily</span>
+    <h1>The MA&amp;R <em>AI Brief</em></h1>
+    <p class="lede">One short read a day on how AI is being adopted across biopharma Market Access &amp; Research: payer analytics, patient access, HEOR and evidence, trade and channel data, and the data foundations that make AI work.</p>
+    <p class="note">Each post is researched and drafted with AI assistance and lists its sources so you can check them. Views are my own and not those of my employer.</p>
+  </section>
+
+  <div class="layout">
+    <div id="post-slot"><p class="empty">Loading the latest post…</p></div>
+    <aside>
+      <h3>All posts</h3>
+      <ul class="archive" id="archive"></ul>
+    </aside>
+  </div>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Devendra Singh · Raleigh, NC</span><span><a href="index.html">devendrasinghbiopharma.vercel.app</a></span></div></footer>
+
+<script>
+(function(){
+  const slot=document.getElementById('post-slot'), archive=document.getElementById('archive');
+  const fmt=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;};
+  let posts=[];
+  function render(){
+    const slug=decodeURIComponent(location.hash.slice(1));
+    const post=posts.find(p=>p.slug===slug)||posts[0];
+    slot.replaceChildren();
+    if(!post){slot.append(el('p','empty','The first post is on its way.'));return;}
+    const a=el('article','post');
+    const meta=el('div','meta');meta.append(el('span',null,fmt(post.date)));
+    (post.tags||[]).forEach(t=>meta.append(el('span','tag',t)));
+    a.append(meta,el('h2',null,post.title));
+    if(post.summary)a.append(el('p','summary',post.summary));
+    const body=el('div','body');(post.body||[]).forEach(p=>body.append(el('p',null,p)));a.append(body);
+    if(post.sources&&post.sources.length){
+      const s=el('div','sources');s.append(el('h3',null,'Sources'));
+      const ol=document.createElement('ol');
+      post.sources.forEach(src=>{const li=document.createElement('li');const l=el('a',null,src.title||src.url);l.href=src.url;l.target='_blank';l.rel='noopener';li.append(l);ol.append(li);});
+      s.append(ol);a.append(s);
+    }
+    const share=el('div','share');
+    const url=location.origin+location.pathname+'#'+post.slug;
+    const li=el('a',null,'Share on LinkedIn');li.href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(url);li.target='_blank';li.rel='noopener';
+    const cp=el('button',null,'Copy link');cp.type='button';cp.onclick=()=>navigator.clipboard.writeText(url).then(()=>cp.textContent='Copied').catch(()=>cp.textContent=url);
+    share.append(li,cp);a.append(share);
+    slot.append(a);
+    document.title=post.title+' · The MA&R AI Brief';
+    archive.querySelectorAll('a').forEach(x=>x.setAttribute('aria-current',x.dataset.slug===post.slug));
+  }
+  fetch('posts/posts.json',{cache:'no-store'}).then(r=>r.json()).then(data=>{
+    posts=data.slice().sort((a,b)=>b.date.localeCompare(a.date));
+    archive.replaceChildren();
+    posts.forEach(p=>{const li=document.createElement('li');const a=document.createElement('a');a.href='#'+p.slug;a.dataset.slug=p.slug;a.append(el('span','d',fmt(p.date)),el('span','t',p.title));li.append(a);archive.append(li);});
+    render();
+  }).catch(()=>{slot.replaceChildren(el('p','empty','Posts could not be loaded right now. Please refresh in a moment.'));});
+  window.addEventListener('hashchange',()=>{render();window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "2026-10-18-payers-are-using-ai-to-write-policy",
+    "date": "2026-10-18",
+    "title": "Payers are using AI to write coverage policy. Market access teams need to get there first.",
+    "summary": "AI-drafted payer policies may be finalized before launch, and they can come out more restrictive than intended. That changes when and how market access teams engage.",
+    "tags": ["Market access", "Payer policy", "Launch"],
+    "body": [
+      "A quiet shift is underway on the payer side. MMIT's 2026 market access outlook notes that health plans increasingly use AI to draft medical policies, evaluate utilization trends, and design formularies and utilization management. Because these models lean on clinical trial inclusion criteria, the resulting policies can end up more restrictive than the payer actually intended.",
+      "The timing matters as much as the content. If an AI-assisted policy is drafted before approval, the window to influence it closes earlier than most launch plans assume. MMIT's experts recommend identifying the most influential payers and engaging them well ahead of launch, with access planning starting as early as Phase 1 or 2.",
+      "This lands on top of an already tight environment. MMIT data cited in the same piece shows new-to-market blocks rising from roughly half of U.S. covered lives a few years ago to almost two-thirds by 2025. IQVIA's July 2026 market access view adds accumulators, maximizers, and IRA and 340B uncertainty to the list of pressures on net revenue.",
+      "What this means for MA&R analytics teams: payer segmentation and policy monitoring can no longer be quarterly exercises. Teams that can quickly compare a draft policy against trial criteria, covered lives, and historical payer behavior will be the ones who shape the outcome rather than react to it.",
+      "One caution. Industry research from Day One Strategy finds that AI access in pharma is outpacing real adoption, and that data quality and governance decide whether AI investments pay off. The same holds here: AI-ready payer data (clean hierarchies, current policy text, reliable lives counts) is the foundation, not an afterthought."
+    ],
+    "sources": [
+      {"title": "MMIT: Market Access in 2026, Predictions on Policies, Contracting and AI", "url": "https://www.mmitnetwork.com/thought-leadership/market-access-2026-part-1/"},
+      {"title": "IQVIA: Insight-led approaches for market access and brand performance (Jul 2026)", "url": "https://www.iqvia.com/locations/united-states/blogs/2026/07/insight-led-approaches-for-market-access-and-brand-performance"},
+      {"title": "pharmaphorum: Are insights leaders seeing real commercial value from AI adoption yet? (Oct 2026)", "url": "https://pharmaphorum.com/sales-marketing/are-insights-leaders-seeing-real-commercial-value-ai-adoption-yet"}
+    ]
+  }
+]
