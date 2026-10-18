@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devendra Singh</title>
+<meta name="description" content="Devendra Singh — pharma commercial analytics, market access insights, and practical AI. Turning complex data into meaningful impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: clinical-lab clarity. Cool mineral paper, deep teal ink, one amber "highlighted cell" accent.
+   Split hero with framed portrait; a data-lineage strip is the signature element. */
+:root{
+  --bg:#F3F6F5; --surface:#FFFFFF; --ink:#0F1E1D; --muted:#566664; --line:#D6DFDC;
+  --teal:#0D5652; --teal-soft:#E1EEEC; --amber:#B9770E; --amber-soft:#FBF0DC;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --max:1120px; --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C1514; --surface:#13201F; --ink:#E5EEEC; --muted:#9AAEAB; --line:#26403D;
+  --teal:#6CC7BD; --teal-soft:#16302E; --amber:#E8AE52; --amber-soft:#2E2412; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1514; --surface:#13201F; --ink:#E5EEEC; --muted:#9AAEAB; --line:#26403D;
+  --teal:#6CC7BD; --teal-soft:#16302E; --amber:#E8AE52; --amber-soft:#2E2412; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(1.75rem,3.2vw,2.5rem);line-height:1.12;font-weight:700}
+h3{font-size:1.2rem;line-height:1.25;font-weight:700}
+p{margin:0}
+.eyebrow{font:500 .75rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.lede{color:var(--muted);max-width:60ch}
+section{padding-block:clamp(56px,8vw,96px)}
+.sec-head{display:grid;gap:.9rem;margin-bottom:2.5rem;max-width:62ch}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.8rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font:700 1rem var(--display)}
+.mono-mark{width:34px;height:34px;border-radius:9px;background:var(--teal);color:var(--bg);display:grid;place-items:center;font:700 .85rem var(--mono);letter-spacing:.02em}
+.nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+.nav ul a{color:var(--muted);text-decoration:none;font-size:.95rem}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.15rem;border-radius:999px;font:600 .95rem var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--teal);color:var(--bg)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--surface)}
+.nav .btn{padding:.5rem 1rem;font-size:.9rem}
+@media (max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,80px)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero-copy{display:grid;gap:1.4rem;min-width:0}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.4rem);line-height:1.02;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--teal);background:linear-gradient(transparent 62%,var(--amber-soft) 62%);padding:0 .08em}
+.tagline{font:500 .9rem var(--mono);color:var(--muted);letter-spacing:.02em}
+.tagline b{color:var(--amber);font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem}
+.portrait{position:relative;justify-self:end;width:min(100%,380px)}
+.portrait figure{margin:0;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 30px 60px -30px rgba(13,86,82,.45)}
+.portrait img{display:block;width:100%;height:auto}
+.cell-tag .headline{display:block;margin-top:.25rem;font:400 .74rem/1.45 var(--body);color:var(--muted)}
+.cell-tag .loc{display:block;margin-top:.35rem}
+.cell-tag{position:relative;margin:12px 0 0;display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.6rem .8rem;font:500 .72rem/1.35 var(--mono);color:var(--muted);box-shadow:0 10px 30px -14px rgba(0,0,0,.35)}
+.cell-tag strong{display:block;color:var(--ink);font:600 .82rem var(--body)}
+.cell-tag .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);margin-right:.35rem;vertical-align:middle}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr}.portrait{justify-self:start;width:min(100%,300px);margin-left:18px}}
+
+.proof{margin-top:clamp(40px,6vw,64px);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof div{padding:1.2rem 1rem 1.2rem 0;display:grid;gap:.2rem}
+.proof div+div{padding-left:1.2rem;border-left:1px solid var(--line)}
+.proof b{font:800 clamp(1.6rem,3vw,2.2rem)/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.proof span{font-size:.9rem;color:var(--muted)}
+@media (max-width:700px){.proof{grid-template-columns:1fr 1fr}.proof div:nth-child(3){padding-left:0;border-left:0}.proof div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* employers band */
+.band{border-block:1px solid var(--line);background:var(--surface)}
+.band .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 2.2rem;padding-block:1.2rem}
+.band small{font:500 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.band span{font:700 1.05rem var(--display);color:var(--muted);letter-spacing:-.01em}
+
+/* who I help */
+.help{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.help article{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:grid;gap:.6rem;align-content:start}
+.help .who{font:500 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.help p{color:var(--muted);font-size:.98rem}
+.help h3{font-size:1.08rem}
+.ways{margin-top:1.4rem;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.4rem;padding:1rem 1.2rem;border:1px dashed var(--line);border-radius:var(--r)}
+.ways .who{font:500 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.ways ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.95rem}
+.ways li::before{content:"→ ";color:var(--teal)}
+@media (max-width:960px){.help{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.help{grid-template-columns:1fr}}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.pillar{background:var(--surface);padding:clamp(1.4rem,3vw,2.2rem);display:grid;gap:.9rem;align-content:start;min-width:0}
+.pillar .k{font:500 .75rem var(--mono);color:var(--teal)}
+.pillar p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0}
+.chips li{font:500 .76rem var(--mono);padding:.3rem .6rem;border-radius:6px;background:var(--teal-soft);color:var(--ink)}
+.groups{display:grid;gap:.7rem}
+.groups div{display:grid;grid-template-columns:9.5rem 1fr;gap:.8rem;font-size:.93rem;border-top:1px dashed var(--line);padding-top:.6rem}
+.groups dt{font:500 .74rem/1.5 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.groups dd{margin:0}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}}
+@media (max-width:520px){.groups div{grid-template-columns:1fr;gap:.2rem}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(6,1fr);gap:1.2rem}
+.sk{grid-column:span 2;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:grid;gap:.8rem;align-content:start;min-width:0}
+.sk.lead{grid-column:span 4;border-color:var(--teal);box-shadow:inset 0 3px 0 var(--teal)}
+.sk.wide{grid-column:span 3}
+.sk .k{font:500 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.sk p{color:var(--muted);font-size:.95rem}
+.sk .chips li{background:var(--teal-soft)}
+.sk .chips li.hi{background:var(--teal);color:var(--bg)}
+.sk .sub{font:500 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+@media (max-width:960px){.skills{grid-template-columns:1fr 1fr}.sk,.sk.lead,.sk.wide{grid-column:span 1}.sk.lead{grid-column:1/-1}}
+@media (max-width:640px){.skills{grid-template-columns:1fr}.sk.lead{grid-column:auto}}
+
+/* lineage */
+.lineage{background:var(--teal-soft)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;overflow-x:auto}
+.step{position:relative;padding:1.2rem 1.4rem 1.2rem 0;display:grid;gap:.5rem;align-content:start;min-width:0}
+.step+.step{padding-left:1.4rem;border-left:1px solid var(--line)}
+.step .lbl{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.step h3{font-size:1.1rem}
+.step p{font-size:.92rem;color:var(--muted)}
+.step code{font:500 .78rem var(--mono);color:var(--ink)}
+.flow-rail{height:6px;border-radius:6px;margin-bottom:1.6rem;background:linear-gradient(90deg,var(--teal) 0 78%,var(--amber) 78% 100%)}
+@media (max-width:900px){.flow{grid-template-columns:1fr}.step+.step{padding-left:0;border-left:0;border-top:1px solid var(--line)}.step{padding-right:0}}
+
+/* work */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
+.filters button{font:500 .85rem var(--body);padding:.45rem .9rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:grid;gap:.85rem;grid-template-rows:auto auto 1fr auto;min-width:0}
+.tag{justify-self:start;font:500 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:.28rem .55rem;border-radius:5px}
+.tag.pro{background:var(--teal-soft);color:var(--teal)}
+.tag.lab{background:var(--amber-soft);color:var(--amber)}
+.case dl{margin:0;display:grid;gap:.55rem;font-size:.93rem}
+.case dt{font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.case dd{margin:0}
+.case .stack{font:500 .76rem var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:.8rem}
+@media (max-width:960px){.work{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.work{grid-template-columns:1fr}}
+
+/* experience */
+.xp{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px)}
+.timeline{list-style:none;margin:0;padding:0;display:grid}
+.timeline li{display:grid;grid-template-columns:8.5rem 1fr;gap:1rem;padding-block:1.1rem;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.when{font:500 .78rem/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.timeline h3{font-size:1.05rem}
+.timeline .org{color:var(--teal);font-weight:600;font-size:.95rem}
+.timeline p{color:var(--muted);font-size:.93rem;margin-top:.3rem}
+.creds{display:grid;gap:1.6rem;align-content:start}
+.creds h3{font-size:.8rem;font-family:var(--mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.creds ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem;font-size:.97rem}
+.creds li::before{content:"▪";color:var(--amber);margin-right:.5rem}
+@media (max-width:860px){.xp{grid-template-columns:1fr}}
+@media (max-width:520px){.timeline li{grid-template-columns:1fr;gap:.2rem}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px)}
+.about .big{font:600 clamp(1.3rem,2.2vw,1.65rem)/1.35 var(--display);letter-spacing:-.01em}
+.about .body{display:grid;gap:1rem;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+/* notes */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.note{border-top:2px solid var(--ink);padding-top:1rem;display:grid;gap:.5rem}
+.note .meta{font:500 .72rem var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.note p{color:var(--muted);font-size:.95rem}
+@media (max-width:860px){.notes{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--bg)}
+.contact .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:end}
+.contact h2{color:var(--bg)}
+.contact p{color:color-mix(in srgb,var(--bg) 72%,transparent);max-width:52ch;margin-top:1rem}
+.contact .eyebrow{color:var(--amber)}
+.reach{display:grid;gap:.7rem}
+.reach a,.reach .mail{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.1rem;border-radius:12px;border:1px solid color-mix(in srgb,var(--bg) 22%,transparent);color:var(--bg);text-decoration:none;font-weight:600}
+.reach a:hover{background:color-mix(in srgb,var(--bg) 8%,transparent)}
+.reach .mail span{font:500 .9rem var(--mono);user-select:all;overflow-wrap:anywhere}
+.reach button{font:600 .8rem var(--body);background:var(--amber);color:var(--ink);border:0;border-radius:999px;padding:.4rem .8rem;cursor:pointer;flex-shrink:0}
+@media (max-width:820px){.contact .wrap{grid-template-columns:1fr}}
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 60%,transparent);font:500 .78rem var(--mono)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;padding-block:1.4rem;border-top:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
+img{max-width:100%}[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mono-mark">DS</span>Devendra Singh</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#help">How I help</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#notes">Notes</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#contact">Let's talk</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Pharma commercial analytics · Market access · Practical AI</span>
+        <h1>Turning complex data into <em>meaningful impact.</em></h1>
+        <p class="tagline">Data. Technology. <b>Practical AI.</b> Meaningful Impact.</p>
+        <p class="lede">I help life-sciences organizations turn payer, patient, and trade data into decisions that leadership and field teams can act on. Fifteen-plus years across Biogen, AbbVie, Genentech, and Eli Lilly, now leading payer analytics, patient and trade insights.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#work">See selected work →</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/devendralko" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <figure><img src="assets/devendra-singh.jpg" alt="Portrait of Devendra Singh, smiling, wearing glasses" width="400" height="574"></figure>
+        <div class="cell-tag"><strong>Devendra Singh</strong><span class="headline">Associate Director | AI LLM Business Insights &amp; Analytics | Payer Dynamics | Patient Access | Veeva CRM | Commercial Info Mgt.</span><span class="loc"><span class="dot"></span>Raleigh, NC</span></div>
+      </div>
+    </div>
+    <div class="proof" aria-label="At a glance">
+      <div><b>15+</b><span>years in life sciences and biopharma</span></div>
+      <div><b>50+</b><span>dashboards and analytics products, plus a deep library of reports</span></div>
+      <div><b>60%</b><span>less manual reporting effort through automation</span></div>
+      <div><b>4</b><span>top biopharma companies served</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="band"><div class="wrap">
+  <small>Experience at</small>
+  <span>Biogen</span><span>AbbVie</span><span>Genentech</span><span>Eli Lilly</span><span>Kythera</span>
+</div></div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="sec-head" style="margin:0">
+      <span class="eyebrow">About</span>
+      <p class="big">I work where data, technology, and business strategy meet, and I care most about the moment an insight changes what someone does next.</p>
+    </div>
+    <div class="body">
+      <p>I started as a software engineer building SharePoint and .NET applications in India. From there I moved into Salesforce and Veeva CRM work for Eli Lilly, then into sales and channel data management at Kythera and Genentech, and into commercial applications and Agile product ownership at AbbVie.</p>
+      <p>At Biogen I lead Market Access and Research analytics: payer insights, patient access, trade and distribution reporting, sales trending, forecasting, and AI-enabled analytics. I own data sourcing and quality across our payer and commercial vendors, manage the SOWs, and present recommendations to senior stakeholders.</p>
+      <p>Outside of work, I build small AI prototypes to see where practical AI can remove repetitive work and make information easier to reach.</p>
+    </div>
+  </div>
+</section>
+
+<section id="help" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How I help commercial & market access teams</span>
+      <h2>The questions access and commercial leaders bring me.</h2>
+      <p class="lede">Payer pressure, affordability, and policy change all show up first in the data. These are the questions I help teams answer, and what I bring to each one.</p>
+    </div>
+    <div class="help help-6">
+      <article><span class="who">Payer strategy</span><h3>Which payers and accounts deserve our focus?</h3><p>Payer segmentation built on clean hierarchies (MMIT, Payer Spine), covered-lives views, and contract performance tracking.</p></article>
+      <article><span class="who">Patient access</span><h3>Where are patients dropping off, and why?</h3><p>Patient journey and specialty pharmacy analytics that link coverage, affordability, and time-to-therapy.</p></article>
+      <article><span class="who">Net revenue & policy</span><h3>What happens to gross-to-net under IRA and 340B?</h3><p>Trended channel and GTN reporting and data ready for scenario modeling when policy shifts.</p></article>
+      <article><span class="who">Trade & distribution</span><h3>Can we trust what the channel is telling us?</h3><p>EDI 852/867 onboarding, reconciliation, and inventory and demand views that hold up week to week.</p></article>
+      <article><span class="who">Field alignment</span><h3>Is the field working the right accounts for current access?</h3><p>Access-aware targeting through Veeva CRM, affiliation hierarchies, and dashboards built for the field.</p></article>
+      <article><span class="who">Practical AI</span><h3>How do we get real value from AI, safely?</h3><p>Start with data quality and governance, then automate one measurable workflow at a time.</p></article>
+    </div>
+    <div class="ways">
+      <span class="who">Ways to connect</span>
+      <ul><li>Speaking & panels on payer and access analytics</li><li>Data storytelling sessions for insights teams</li><li>Peer conversations on practical AI in life sciences</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Expertise</span>
+      <h2>Four areas, one through-line: data that drives decisions.</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="k">A · Analytics & BI</span>
+        <h3>Data Analytics & Business Intelligence</h3>
+        <p>Executive dashboards, commercial performance, sales trending and forecasting, with data validation built in so the numbers hold up in the room.</p>
+        <ul class="chips"><li>Power BI</li><li>Tableau</li><li>Snowflake</li><li>SQL</li><li>Python</li><li>Qlik</li><li>Excel/VBA</li></ul>
+      </div>
+      <div class="pillar">
+        <span class="k">B · Domain</span>
+        <h3>Pharma, Biotech & Market Access</h3>
+        <dl class="groups">
+          <div><dt>Payer & access</dt><dd>Payer hierarchies, formulary, stated coverage, covered lives, gross-to-net, patient access</dd></div>
+          <div><dt>Payer data</dt><dd>MMIT, Precision Payer Hierarchy, Payer Spine</dd></div>
+          <div><dt>Rx & claims</dt><dd>IQVIA DDD, Xponent, PlanTrak, NSP, APLD · Symphony Health · claims</dd></div>
+          <div><dt>Trade & channel</dt><dd>EDI 850 / 852 / 867, specialty pharmacy, wholesaler, GPO</dd></div>
+          <div><dt>CRM & field</dt><dd>Veeva CRM, Network, Align · Compass · Oncology Link · Salesforce</dd></div>
+        </dl>
+      </div>
+      <div class="pillar">
+        <span class="k">C · Practical AI</span>
+        <h3>Practical AI & Automation</h3>
+        <p>AI-enabled reporting and automated data reconciliation at work; voice assistants, retrieval assistants, and workflow prototypes in my own lab.</p>
+        <ul class="chips"><li>LLM-enabled analytics</li><li>Claude Code</li><li>Codex</li><li>Process automation</li></ul>
+      </div>
+      <div class="pillar">
+        <span class="k">D · Delivery</span>
+        <h3>Technology Consulting & Solution Design</h3>
+        <p>Requirements, functional and technical specs, Agile product ownership, vendor and SOW management, and onsite-offshore team leadership.</p>
+        <ul class="chips"><li>Requirements</li><li>Solution design</li><li>Agile PO</li><li>Vendor mgmt</li><li>Stakeholders</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Skills & data</span>
+      <h2>The data, platforms, and domain knowledge behind the work.</h2>
+      <p class="lede">Hands-on experience with the payer, channel, and commercial data that market access and commercial teams run on.</p>
+    </div>
+    <div class="skills">
+      <article class="sk lead">
+        <span class="k">Core strength</span>
+        <h3>Payer & Market Access Analytics</h3>
+        <p>Turning payer and coverage data into a clear view of where patients can get therapy and what it costs to get them there.</p>
+        <ul class="chips"><li class="hi">Payer analytics</li><li class="hi">Payer insights</li><li class="hi">Payer hierarchy</li><li>Formulary</li><li>Stated coverage</li><li>Covered lives</li><li class="hi">Gross-to-net (GTN)</li><li class="hi">Patient access</li></ul>
+      </article>
+      <article class="sk">
+        <span class="k">Channel</span>
+        <h3>Trade & Distribution</h3>
+        <p>Onboarding, validating, and trending sales data across the supply chain.</p>
+        <ul class="chips"><li class="hi">EDI 850 / 852 / 867</li><li>Wholesaler data</li><li>Distributor data</li><li>Specialty pharmacy data</li><li>GPO data</li><li>Channel analytics</li><li>Sales trending</li></ul>
+      </article>
+      <article class="sk wide">
+        <span class="k">Data sources</span>
+        <h3>Commercial Data Sources</h3>
+        <p class="sub">Payer</p>
+        <ul class="chips"><li class="hi">MMIT</li><li>Precision Payer Hierarchy</li><li>Payer Spine</li></ul>
+        <p class="sub">Prescription, claims & accounts</p>
+        <ul class="chips"><li class="hi">IQVIA DDD</li><li>IQVIA Xponent</li><li>IQVIA PlanTrak</li><li>IQVIA NSP</li><li>IQVIA APLD</li><li>Symphony Health (SHA)</li><li>HCOS</li><li>Claims</li></ul>
+      </article>
+      <article class="sk wide">
+        <span class="k">Field</span>
+        <h3>CRM & Field Operations</h3>
+        <p class="sub">Platforms</p>
+        <ul class="chips"><li class="hi">Veeva CRM</li><li>Veeva Network / OpenData</li><li>Veeva Align</li><li>Compass</li><li>Oncology Link</li><li>Salesforce.com</li></ul>
+        <p class="sub">Field operations</p>
+        <ul class="chips"><li>Call & cycle plans</li><li>Targeting</li><li>Alignment</li></ul>
+      </article>
+      <article class="sk lead" style="grid-column:1/-1">
+        <span class="k">Tools</span>
+        <h3>BI, Data & Analytics</h3>
+        <p class="sub">Data platforms & languages</p>
+        <ul class="chips"><li class="hi">Snowflake</li><li class="hi">SQL</li><li>Oracle PL/SQL</li><li>SQL Server</li><li>Python (pandas)</li><li>Excel / VBA</li></ul>
+        <p class="sub">BI & visualization</p>
+        <ul class="chips"><li class="hi">Power BI</li><li class="hi">Tableau</li><li>Qlik Sense / QlikView</li></ul>
+        <p class="sub">Analytics & AI</p>
+        <ul class="chips"><li>Forecasting</li><li class="hi">AI / LLM-enabled analytics</li><li>Claude Code</li><li>Codex</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="lineage" aria-labelledby="lin-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How I work</span>
+      <h2 id="lin-h">From raw feed to field decision.</h2>
+      <p class="lede">Most of my work follows the same path. The last step is the one that counts.</p>
+    </div>
+    <div class="flow-rail" aria-hidden="true"></div>
+    <div class="flow">
+      <div class="step"><span class="lbl">Source</span><h3>Onboard the feeds</h3><p><code>EDI 867</code>, IQVIA, MMIT, claims, GPO. New vendors, new products, clear SOWs.</p></div>
+      <div class="step"><span class="lbl">Validate</span><h3>Trust the data</h3><p>Profiling, reconciliation, and quality rules. Master data in Veeva Network.</p></div>
+      <div class="step"><span class="lbl">Model</span><h3>Shape it for use</h3><p>SQL on Snowflake, payer hierarchies, and affiliations that match how the business thinks.</p></div>
+      <div class="step"><span class="lbl">Deliver</span><h3>Put it in front of people</h3><p>Power BI and Tableau products, automated refreshes, and self-service.</p></div>
+      <div class="step"><span class="lbl">Decide</span><h3>Change what happens next</h3><p>Access strategy, field focus, and forecasts that leadership can act on.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Selected work</span>
+      <h2>Case studies.</h2>
+      <p class="lede">Professional work is described at a level that respects employer confidentiality. Lab projects are personal prototypes and are labeled as such.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button id="f-all" type="button" data-f="all" aria-pressed="true">All</button>
+      <button id="f-pro" type="button" data-f="pro" aria-pressed="false">Professional</button>
+      <button id="f-lab" type="button" data-f="lab" aria-pressed="false">Lab &amp; prototypes</button>
+    </div>
+    <div class="work">
+      <article class="case" data-k="pro"><span class="tag pro">Professional · Biogen</span><h3>Payer & patient access analytics suite</h3>
+        <dl><div><dt>Challenge</dt><dd>Payer, pharmacy, and access data lived in separate vendor feeds with gaps between them.</dd></div>
+        <div><dt>Approach</dt><dd>Unified sourcing and quality checks, then built one family of dashboards for payer ops, pharmacy programs, and field teams.</dd></div>
+        <div><dt>Value</dt><dd>50+ dashboards in use and about 60% less manual reporting.</dd></div></dl>
+        <p class="stack">MMIT · Payer Spine · Snowflake · Power BI · Tableau</p></article>
+      <article class="case" data-k="pro"><span class="tag pro">Professional · Biogen / Genentech</span><h3>Trade & distribution data pipeline</h3>
+        <dl><div><dt>Challenge</dt><dd>Weekly sales from wholesalers and specialty pharmacies arrived in different shapes and timings.</dd></div>
+        <div><dt>Approach</dt><dd>Onboarded EDI 852/867 partners, profiled and reconciled each feed, and published validated data downstream.</dd></div>
+        <div><dt>Value</dt><dd>Trusted, on-time channel numbers for sales trending and forecasting.</dd></div></dl>
+        <p class="stack">EDI 850/852/867 · GPO · SQL · PL/SQL</p></article>
+      <article class="case" data-k="pro"><span class="tag pro">Professional · Biogen</span><h3>Customer master & affiliation hierarchy</h3>
+        <dl><div><dt>Challenge</dt><dd>Account and HCO relationships needed one source of truth across commercial apps.</dd></div>
+        <div><dt>Approach</dt><dd>Served as business owner for Veeva Network and affiliation hierarchy for the US business unit.</dd></div>
+        <div><dt>Value</dt><dd>Consistent targeting and reporting across CRM and analytics.</dd></div></dl>
+        <p class="stack">Veeva Network / OpenData · HCOS · Veeva CRM</p></article>
+      <article class="case" data-k="pro"><span class="tag pro">Professional · AbbVie</span><h3>Field CRM roadmap & quarterly deployments</h3>
+        <dl><div><dt>Challenge</dt><dd>Field teams needed call plans, targeting, and alignment changes each quarter without disruption.</dd></div>
+        <div><dt>Approach</dt><dd>Owned the Salesforce and Veeva CRM roadmap as Agile product owner, from backlog to release.</dd></div>
+        <div><dt>Value</dt><dd>Predictable releases and trained field and medical teams.</dd></div></dl>
+        <p class="stack">Veeva CRM · Salesforce · JIRA · Agile</p></article>
+      <article class="case" data-k="lab"><span class="tag lab">Lab · Prototype</span><h3>AI voice receptionist</h3>
+        <dl><div><dt>Challenge</dt><dd>Small businesses miss calls and spend hours on routine inquiries and booking.</dd></div>
+        <div><dt>Approach</dt><dd>A voice assistant that answers common questions and handles appointment requests.</dd></div>
+        <div><dt>Intended value</dt><dd>Fewer missed calls and more staff time for real work.</dd></div></dl>
+        <p class="stack">LLM · Voice AI · Workflow automation</p></article>
+      <article class="case" data-k="lab"><span class="tag lab">Lab · Concept</span><h3>AI-assisted data reconciliation</h3>
+        <dl><div><dt>Challenge</dt><dd>Analysts lose hours chasing mismatches between vendor feeds.</dd></div>
+        <div><dt>Approach</dt><dd>An assistant that flags breaks, explains likely causes, and drafts the follow-up to the vendor.</dd></div>
+        <div><dt>Intended value</dt><dd>Faster closes on data issues and cleaner monthly reporting.</dd></div></dl>
+        <p class="stack">LLM · SQL · Data quality rules</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="padding-top:0">
+  <div class="wrap xp">
+    <div class="creds">
+      <div class="sec-head" style="margin:0">
+        <span class="eyebrow">Experience</span>
+        <h2>Fifteen-plus years, one industry.</h2>
+      </div>
+      <div><h3>Education</h3><ul><li>Masters in Computer Application, U.P. Technical University</li><li>Bachelors in Information Technology and Management, Utkal University</li></ul></div>
+      <div><h3>Certifications</h3><ul><li>Generative AI certification</li><li>Power BI certifications</li><li>Veeva Vault Admin</li><li>Associate White Belt, Veeva CRM</li></ul></div>
+      <div><h3>Recognition</h3><ul><li>20+ corporate excellence awards</li></ul></div>
+    </div>
+    <ol class="timeline">
+      <li><span class="when">2025 – now</span><div><h3>Associate Director, Payer Analytics, Patient & Trade Insights</h3><span class="org">Biogen</span><p>Lead market access analytics, payer and commercial data quality, and AI-enabled reporting.</p></div></li>
+      <li><span class="when">2023 – 2025</span><div><h3>Senior Manager, Commercial Information</h3><span class="org">Biogen</span><p>Data Lead for trade, claims, and GPO feeds; business owner for Veeva Network.</p></div></li>
+      <li><span class="when">2019 – 2023</span><div><h3>Manager IT, Commercial Applications</h3><span class="org">AbbVie</span><p>Salesforce and Veeva CRM roadmap, field deployments, Agile product ownership.</p></div></li>
+      <li><span class="when">2016 – 2019</span><div><h3>Senior Data Analyst, Commercial Data Management</h3><span class="org">Genentech</span><p>Sales and channel analytics, EDI 867 onboarding, commercial BI system.</p></div></li>
+      <li><span class="when">2015 – 2016</span><div><h3>Data Analytics Consultant</h3><span class="org">Kythera Biopharmaceuticals</span><p>Partner sales data onboarding, Salesforce and Veeva administration.</p></div></li>
+      <li><span class="when">2010 – 2015</span><div><h3>IT Analyst → Data Module Lead</h3><span class="org">Eli Lilly (via TCS)</span><p>IMS DDD and Xponent data management, Salesforce and Veeva CRM development.</p></div></li>
+      <li><span class="when">2007 – 2010</span><div><h3>Senior Software Engineer</h3><span class="org">Velocis Systems</span><p>SharePoint and C# applications for enterprise clients.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="notes" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Notes</span>
+      <h2>Writing on data, access, and practical AI.</h2>
+      <p class="lede">Short pieces from the work. First posts coming soon.</p>
+    </div>
+    <div class="notes">
+      <div class="note"><span class="meta">Market access · Draft</span><h3>Why your payer hierarchy is the real dashboard</h3><p>Most access reporting problems start in how plans roll up, not in the visual layer.</p></div>
+      <div class="note"><span class="meta">Data quality · Draft</span><h3>Reconciling EDI 867 without losing a week</h3><p>The checks that catch most channel data breaks before anyone sees a report.</p></div>
+      <div class="note"><span class="meta">Practical AI · Draft</span><h3>Where AI saves analysts real hours</h3><p>Three workflows where an assistant pays for itself, and two where it does not yet.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2 style="margin-top:.9rem">Let's turn your data into a decision.</h2>
+      <p>Open to conversations about commercial and market access analytics, data strategy, speaking, and practical AI in life sciences.</p>
+    </div>
+    <div class="reach">
+      <a href="https://www.linkedin.com/in/devendralko" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+      <div class="mail"><span id="email">devendra.lko@gmail.com</span><button id="copy" type="button">Copy</button></div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Devendra Singh · Raleigh, NC</span><span>Data · Technology · Practical AI</span></div></footer>
+
+<script>
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;
+  document.querySelectorAll('.case').forEach(c=>c.hidden=!(f==='all'||c.dataset.k===f));
+}));
+document.getElementById('copy').addEventListener('click',e=>{
+  const t=document.getElementById('email').textContent, btn=e.currentTarget;
+  const done=()=>{btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy',1600)};
+  navigator.clipboard.writeText(t).then(done).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('email'));const s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected'});
+});
+</script>
+
+</body>
+</html>
