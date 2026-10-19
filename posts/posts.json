@@ -66,5 +66,41 @@
         "url": "https://www.mmitnetwork.com/thought-leadership/market-access-2026-part-1/"
       }
     ]
+  },
+  {
+    "slug": "2026-10-19-hta-bodies-made-ai-in-evidence-dossiers-auditable",
+    "date": "2026-10-19",
+    "title": "HTA bodies have not banned AI in evidence dossiers. They have made it auditable.",
+    "summary": "NICE, the EU HTA Coordination Group and Canada's Drug Agency now share one expectation for AI in evidence submissions: disclose it, keep a human accountable, and show the validation. For MA&R teams, that turns AI use into a documentation and governance job.",
+    "tags": [
+      "HTA",
+      "HEOR",
+      "AI governance"
+    ],
+    "body": [
+      "Over the past two years, the rules for using AI in health technology assessment submissions have taken shape, and they point the same way. None of the major bodies prohibits AI. Each one makes the manufacturer answerable for it. An October analysis from Eularis made exactly that point in its headline: nobody has banned AI in HTA submissions, but everybody has made you answerable for it.",
+      "NICE set the template in its August 2024 position statement. Declare any AI use and explain why it was chosen. Keep a capable person in the loop. Validate the method and report risks such as bias. NICE also asks that established, more explainable methods come first, with less transparent approaches presented as supplementary.",
+      "The EU followed. On 15 July 2026 the HTA Coordination Group adopted general principles for AI use in Joint Clinical Assessment dossiers. As Cytel summarizes them, developers stay fully responsible for the evidence and conclusions, no step should be fully automated, and each meaningful AI use must be documented with the tool, version, developer and purpose. Prompts should be retained and available on request. In Canada, Smart & Biggar reports that Canada's Drug Agency issued guidance in July 2026 on AI methods used to extract variables from unstructured data for real-world evidence. It says AI should be used only when clearly justified and should not yet replace well-established approaches.",
+      "The practical message is that the burden has moved from the method to the record. An AI-assisted literature screen or an extraction table is acceptable only if you can show what the tool did, who checked it, and how it was validated. That record has to exist before the dossier is written. It cannot be rebuilt afterwards.",
+      "For MA&R analytics teams, this is a data governance task. Treat AI-assisted evidence work like any other controlled data pipeline: version the tools, log prompts and outputs, capture human review sign-offs, and store validation results next to the analysis. The same discipline will strengthen US payer value dossiers, even where no rule requires it yet. Teams that build the audit trail now will move faster as JCA scope expands to orphan medicines in January 2028."
+    ],
+    "sources": [
+      {
+        "title": "Eularis: Nobody Has Banned AI in HTA Submissions. Everybody Has Made You Answerable for It. (Oct 2026)",
+        "url": "https://eularis.com/nobody-has-banned-ai-in-hta-submissions-everybody-has-made-you-answerable-for-it/"
+      },
+      {
+        "title": "Cytel: The EU HTA AI Guidance Has Arrived: What It Means for Joint Clinical Assessments (Jul 2026)",
+        "url": "https://cytel.com/perspectives/the-eu-hta-ai-guidance-has-arrived-what-it-means-for-joint-clinical-assessments/"
+      },
+      {
+        "title": "Smart & Biggar: Canada's Drug Agency guidance document on use of AI methods and summary of precision medicine initiatives (Aug 2026)",
+        "url": "https://www.smartbiggar.ca/insights/publication/canada-s-drug-agency-guidance-document-on-use-of-ai-methods-summary-of-precision-medicine-initiatives"
+      },
+      {
+        "title": "NICE: Use of AI in evidence generation: NICE position statement (Aug 2024)",
+        "url": "https://www.nice.org.uk/position-statements/use-of-AI-in-evidence-generation-NICE-position-statement"
+      }
+    ]
   }
 ]
