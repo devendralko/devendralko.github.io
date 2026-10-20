@@ -102,5 +102,33 @@
         "url": "https://www.nice.org.uk/position-statements/use-of-AI-in-evidence-generation-NICE-position-statement"
       }
     ]
+  },
+  {
+    "slug": "2026-10-20-ai-agents-reach-field-access-teams-governance-lags",
+    "date": "2026-10-20",
+    "title": "AI agents are reaching field access teams. Governance has not caught up.",
+    "summary": "AI agents built for field reimbursement work are now on the market, while most pharma companies still lack fully operational AI governance. MA&R analytics should set the data and oversight rules before the agents start talking to provider offices.",
+    "tags": [
+      "Field Access",
+      "AI Governance",
+      "Patient Access"
+    ],
+    "body": [
+      "Field reimbursement work is starting to get its own AI agents. On October 7, Fierce Healthcare reported that Infinitus launched a suite of AI agents for pharma sales reps and field reimbursement managers. On the access side, the agents answer questions about prior authorization status, claims and reimbursement, and help onboard provider offices with approved access materials. The company frames it as augmenting field teams, not replacing them. Fierce notes there are no performance metrics, pricing or named customers yet.",
+      "The direction matters more than any one vendor. Field access teams sit where payer rules meet the provider office. The questions they handle every day, such as where a PA stands or why a claim was denied, depend on data that already flows through hubs, specialty pharmacies and payer portals. An agent that answers those questions is only as good as that data and the rules around it.",
+      "That is where the industry still looks thin. ZS's 2027 CDIO Outlook Survey, released October 6, found that 56% of respondents report measurable AI outcomes in commercial sales and marketing, up from 47% a year earlier. But 55% of organizations are still defining or rolling out AI governance, and only 17% say it is fully operational enterprise-wide. ZS also found that 72% of its \"AI value leaders\" rank data for AI as mission-critical, versus 46% of other organizations.",
+      "Put those together and the risk is clear. Agents that talk to provider offices about coverage and reimbursement are a compliance-sensitive use case. If governance lags deployment, the first problems will show up as inconsistent answers, unclear escalation paths and interaction records no one can audit.",
+      "What it means for MA&R analytics teams: get ahead of the field. Define the source of truth for PA and claim status before an agent starts quoting it. Agree on what an agent may say, when it hands off to a person, and how every interaction is logged. Plan to measure outcomes such as time to therapy and abandonment, not just call volume. If analytics does not set those rules, the vendor contract will."
+    ],
+    "sources": [
+      {
+        "title": "Fierce Healthcare: Infinitus launches AI agents to help pharma teams reach more providers (Oct 2026)",
+        "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/infinitus-launches-agentic-ai-solution-aid-provider-engagement-pharma"
+      },
+      {
+        "title": "ZS: AI value emerges in pharma: 2027 CDIO Outlook Survey (Oct 2026)",
+        "url": "https://www.zs.com/about/newsroom/press-release-2027-cdio-outlook-survey-ai-value-pharma"
+      }
+    ]
   }
 ]
