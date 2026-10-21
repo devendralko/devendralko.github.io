@@ -130,5 +130,41 @@
         "url": "https://www.zs.com/about/newsroom/press-release-2027-cdio-outlook-survey-ai-value-pharma"
       }
     ]
+  },
+  {
+    "slug": "2026-10-21-340b-is-becoming-a-claim-level-data-problem",
+    "date": "2026-10-21",
+    "title": "340B is becoming a claim-level data problem. Access analytics teams should build for it now.",
+    "summary": "HRSA approved 10 manufacturers for its revised 340B rebate pilot and CMS opened a Part D 340B claims repository on the same day. Both run on claim-level data, and the timelines make automated, auditable matching a requirement.",
+    "tags": [
+      "340B",
+      "Gross-to-Net",
+      "Data Foundations"
+    ],
+    "body": [
+      "On October 1, two federal 340B data efforts moved forward on the same day. HRSA approved 10 manufacturers for its revised 340B Rebate Model Pilot, set to begin January 1, 2027, according to AHA News. CMS opened its Medicare Part D 340B claims repository for voluntary submissions. The AHA says it is considering all available options to stop the pilot, so legal risk has not gone away.",
+      "The common thread is claim-level data. Epstein Becker Green's summary of the HRSA notice lists 11 required pharmacy claim fields and, new this year, 12 medical claim fields. Covered entities submit within 45 days of dispense, and manufacturers must pay or deny a rebate within 10 calendar days of a complete submission. CMS describes its repository as a test of whether covered-entity data can reliably identify 340B units to exclude from Part D inflation rebate calculations. Testing data will not be used for that purpose yet.",
+      "A 10-day clock leaves little room for manual review. Matching submitted claims to rebate invoices, catching duplicates, and making a pay-or-deny call at that pace will push teams toward automated matching and anomaly detection. IntegriChain argues manufacturers need consistent duplicate discount logic across Medicaid, commercial, and Medicare, with 340B claim validation built into the rebate cycle rather than run after it.",
+      "The catch is that every denial will be challenged. Hospitals are already contesting the model in public and in court. Any automated or AI-assisted matching has to be documented, reproducible, and easy to explain to a covered entity or a regulator. A model score on its own is not a defensible reason to deny a rebate.",
+      "What it means for MA&R analytics teams: treat 340B claims as a core data asset, not a side file owned by contracting. Build one claim-level foundation that joins 340B submissions to Medicaid, commercial, and Medicare rebate data, with NDC-11 and pharmacy identifiers mastered. Start with clear matching rules, add machine learning only where it lifts match rates and can be audited, and report the gross-to-net impact by channel. That work pays off whether or not the pilot survives."
+    ],
+    "sources": [
+      {
+        "title": "AHA News: HRSA approves 10 drug companies for participation in the 340B Rebate Model Pilot Program (Oct 2026)",
+        "url": "https://www.aha.org/news/headline/2026-10-01-hrsa-approves-10-drug-companies-participation-340b-rebate-model-pilot-program"
+      },
+      {
+        "title": "Epstein Becker Green: HRSA Announces Revised 340B Rebate Model Pilot Program for 2027 (Aug 2026)",
+        "url": "https://www.ebglaw.com/health-law-advisor/hrsa-announces-revised-340b-rebate-model-pilot-program-for-2027"
+      },
+      {
+        "title": "CMS: Fact Sheet: Medicare Part D Claims Data 340B Repository (Aug 2026)",
+        "url": "https://www.cms.gov/files/document/cms-medicare-part-d-340b-repository-fact-sheet.pdf"
+      },
+      {
+        "title": "IntegriChain: 340B Program Update for Pharma Manufacturers (Apr 2026)",
+        "url": "https://www.integrichain.com/resources/340b-program-update-rebate-model-contract-pharmacies-duplicate-discounts-and-what-manufacturers"
+      }
+    ]
   }
 ]
