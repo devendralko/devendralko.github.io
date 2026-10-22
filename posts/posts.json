@@ -166,5 +166,37 @@
         "url": "https://www.integrichain.com/resources/340b-program-update-rebate-model-contract-pharmacies-duplicate-discounts-and-what-manufacturers"
       }
     ]
+  },
+  {
+    "slug": "2026-10-22-wholesalers-ai-demand-sensing-trade-analytics",
+    "date": "2026-10-22",
+    "title": "Wholesalers are using AI to read demand earlier. Trade analytics teams should not be the last to see it.",
+    "summary": "Cencora is piloting an AI tool that flags demand shifts from ordering patterns, while the channel itself is changing under net pricing, IRA and 340B. Manufacturer trade analytics needs its own channel data in order before the distributor sees the shift first.",
+    "tags": [
+      "Trade & Distribution",
+      "Forecasting",
+      "Data Foundations"
+    ],
+    "body": [
+      "Pharmaceutical Commerce reported on October 14 that Cencora has rolled out an AI tool to a handful of its buyers. It flags demand shifts by comparing historical forecasts with incoming ordering patterns, explains its reasoning, and lets buyers ask what drove a spike. Cencora says early results show a 10% forecasting improvement on a limited set of SKUs.",
+      "The more telling detail is what the tool works without. Cencora's Matt Sample noted that the distributor does not receive the point-of-sale demand data that consumer supply chains rely on. The gain came from putting forecasts, ordering history, and ERP data in one place, work buyers used to do by hand in spreadsheets. Cencora is also building knowledge graphs that link manufacturers to FDA actions and other risk factors to spot shortage patterns.",
+      "The channel these models learn from is also moving. Drug Channels Institute's 2026 wholesaler outlook describes a shift toward a net pricing drug channel, with manufacturers cutting list prices on more than 30 brands. It also expects IRA negotiated prices for selected Part B drugs, starting in 2028, to shift purchasing volume toward large hospitals and 340B covered entities. Past ordering patterns will be a weaker guide to future demand.",
+      "Speakers at LogiPharma USA 2026 made the sequencing point plainly. Pfizer's Gisele Fahmi put a standard process and trusted master data ahead of any AI, and said AI can clean data faster than humans but cannot connect departments. Johnson & Johnson's Marcio Alves da Silva added that teams must be able to explain why a model reached its answer.",
+      "For MA&R analytics teams, the lesson is practical. Trade teams already hold the signals that matter: 852 inventory, 867 sell-through, specialty pharmacy dispense data, and chargeback feeds. If a distributor spots a demand shift before the brand's own trade analytics does, that is a data integration gap, not a tooling gap. Reconcile product and customer master data across these feeds first. Then build exception alerts the trade and forecasting teams can trust and explain, and track channel mix by class of trade as IRA and 340B changes take hold."
+    ],
+    "sources": [
+      {
+        "title": "Pharmaceutical Commerce: Inside Cencora's Approach to AI-Driven Demand Sensing (Oct 2026)",
+        "url": "https://www.pharmaceuticalcommerce.com/view/inside-cencoras-approach-to-ai-driven-demand-sensing"
+      },
+      {
+        "title": "Drug Channels: 10 Crucial Trends Facing U.S. Drug Wholesalers in 2026 and Beyond (Oct 2026)",
+        "url": "https://www.drugchannels.net/2026/10/10-crucial-trends-facing-us-drug.html"
+      },
+      {
+        "title": "Pharmaceutical Commerce: LogiPharma USA 2026: Data Readiness Must Come Before AI (Oct 2026)",
+        "url": "https://www.pharmaceuticalcommerce.com/view/logipharma-usa-2026-data-readiness-must-come-before-ai"
+      }
+    ]
   }
 ]
