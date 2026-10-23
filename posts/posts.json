@@ -198,5 +198,33 @@
         "url": "https://www.pharmaceuticalcommerce.com/view/logipharma-usa-2026-data-readiness-must-come-before-ai"
       }
     ]
+  },
+  {
+    "slug": "2026-10-23-market-access-ai-efficiency-gains-few-prove-return",
+    "date": "2026-10-23",
+    "title": "Market access teams report AI efficiency gains. Very few can prove the return.",
+    "summary": "A new peer-reviewed survey of European market access leaders finds AI is saving time, but only 9% of adopters report a clearly measurable return. The gap is data and measurement, not models.",
+    "tags": [
+      "AI ROI",
+      "Market Access",
+      "Data Foundations"
+    ],
+    "body": [
+      "Most AI surveys in pharma look at R&D or the enterprise as a whole. A study published in September in Global and Regional Health Technology Assessment looks at market access specifically. Researchers at ProductLife Group surveyed 50 European market access executives and senior leaders. Overall, 44% reported formal AI deployment in their organization. Size mattered: 85% of large companies had deployed AI, compared with 28% of medium and 32% of small companies.",
+      "Among the 22 companies using AI, market access was the function most affected, cited by 59%. And 86% reported efficiency gains. But only 9%, two companies, reported a clearly positive and measurable return. Another 55% saw a return they found hard to measure, and 32% had seen no tangible results yet.",
+      "The barriers will sound familiar. Among companies using AI in market access, lack of training data and difficulty integrating with existing systems were each cited by 45%. Regulatory acceptance of AI-based evidence was cited by 36%. Some respondents reported trouble justifying AI models to regulators or payers, and some saw biased or inaccurate recommendations affecting pricing and reimbursement. The authors are clear that the sample is small and may lean toward AI-engaged professionals.",
+      "ZS's 2027 CDIO Outlook Survey, released in October, points the same way at enterprise level. It reports that 56% of organizations saw measurable AI outcomes in commercial sales and marketing, up from 47%. Among its 'AI value leaders', 72% rank data for AI as mission-critical, versus 46% of other organizations. Only 17% say AI governance is fully operational across the enterprise.",
+      "What it means for MA&R analytics teams: efficiency is not the same as value, and leadership will soon ask for the difference. Pick the metric before the pilot starts: analyst hours on payer policy review, time to refresh a coverage view, forecast error, pull-through. Baseline it now. Fix the data layer first, because that is where these projects stall: payer hierarchy mapping, formulary-to-claims linkage, clean contract terms. Keep a human checkpoint on anything that touches pricing, contracting, or a payer submission. The teams that can show the number will keep the funding."
+    ],
+    "sources": [
+      {
+        "title": "Global and Regional Health Technology Assessment: Exploring the current and future role of artificial intelligence in pharmaceutical market access: insights from a European survey (Sep 2026)",
+        "url": "https://journals.aboutscience.eu/index.php/grhta/article/view/3813"
+      },
+      {
+        "title": "ZS: AI value emerges in pharma: 2027 CDIO Outlook Survey (Oct 2026)",
+        "url": "https://www.zs.com/about/newsroom/press-release-2027-cdio-outlook-survey-ai-value-pharma"
+      }
+    ]
   }
 ]
