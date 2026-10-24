@@ -226,5 +226,37 @@
         "url": "https://www.zs.com/about/newsroom/press-release-2027-cdio-outlook-survey-ai-value-pharma"
       }
     ]
+  },
+  {
+    "slug": "2026-10-24-medicare-pbm-delinking-contract-analytics",
+    "date": "2026-10-24",
+    "title": "Medicare will delink PBM pay from drug prices in 2028. Contract analytics needs a rebuild now.",
+    "summary": "A CMS proposed rule would limit Part D PBMs to flat service fees and require full rebate pass-through from 2028. Access analytics teams should start modeling what that does to contract value and gross-to-net.",
+    "tags": [
+      "PBM reform",
+      "Contracting",
+      "Gross-to-net"
+    ],
+    "body": [
+      "On October 16, CMS released a proposed rule implementing the Medicare provisions of the Consolidated Appropriations Act of 2026. According to a McDermott client alert, PBMs serving Part D plans could earn only bona fide service fees, defined as the cost of a service plus a reasonable markup. Manufacturer rebates would have to be fully passed through to the plan sponsor, meaning 100% of their gross economic value. The requirements apply to plan years starting January 1, 2028. Comments are due December 15.",
+      "Healthcare Dive reports that those fees could not depend on a drug's price, the rebates it generates, or its formulary placement. PBMs would also report annually to sponsors and CMS on what was dispensed, where, and what revenue the PBM kept.",
+      "For manufacturers, this goes to the core of how Part D contracts are valued. Fees tied to list price and rebate size have long been part of the math behind formulary deals. If the rule is finalized as proposed, the conversation moves toward net cost and access outcomes, and plans will hold far more data on both.",
+      "Data and AI are the other half of the story. At the PBMI conference, as reported by Managed Healthcare Executive, speakers said transparency alone is not enough and called for actionable data and real-time technology. Dana McCormick of AMCP said technology could help fit population-level utilization management policies to individual patients, and speakers expect employers to adopt AI over the next five years. McCormick also cautioned that more transparency does not automatically mean more value.",
+      "What this means for MA&R analytics teams: build Part D contract scenarios under delinked compensation now, covering rebate tiers, fee exposure, and gross-to-net accruals. Inventory every contract term tied to WAC or rebate percentage. AI can speed up the reading of contract language and invoice reconciliation, but the assumptions need human owners. And plan for payers who will arrive at 2028 negotiations with cleaner data and sharper utilization management tools."
+    ],
+    "sources": [
+      {
+        "title": "McDermott: CMS Proposed Rule Implements Key Medicare Provisions of CAA 2026 (Oct 2026)",
+        "url": "https://www.mcdermottlaw.com/insights/cms-issues-proposed-rule-implementing-caa-medicare-provisions/"
+      },
+      {
+        "title": "Healthcare Dive: CMS proposes rule to clean up MA provider directories, shine light on PBMs (Oct 2026)",
+        "url": "https://www.healthcaredive.com/news/cms-proposes-rule-clean-up-ma-provider-directories-pbms/833325/"
+      },
+      {
+        "title": "Managed Healthcare Executive: Transparency is out. Actionable data is in. (Sep 2026)",
+        "url": "https://www.managedhealthcareexecutive.com/view/transparency-is-out-actionable-data-is-in-pbmi-2026"
+      }
+    ]
   }
 ]
