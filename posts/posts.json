@@ -258,5 +258,37 @@
         "url": "https://www.managedhealthcareexecutive.com/view/transparency-is-out-actionable-data-is-in-pbmi-2026"
       }
     ]
+  },
+  {
+    "slug": "2026-10-25-globe-model-international-price-data",
+    "date": "2026-10-25",
+    "title": "Medicare's GLOBE model is final and narrow. The international price data work is not.",
+    "summary": "CMS finalized a much smaller most-favored-nation model for Part B, but its benchmark design rewards manufacturers that can defend net prices by country. That is a data foundation job before it is an AI job.",
+    "tags": [
+      "Pricing",
+      "MFN",
+      "Data Foundations"
+    ],
+    "body": [
+      "CMS finalized the GLOBE model on September 30. It is a mandatory Medicare Part B model that compares U.S. prices for certain drugs against prices in 19 reference countries, adjusted for GDP on a purchasing-power basis. According to Skadden, collection of voluntary manufacturer-submitted international net price data begins January 1, 2027.",
+      "The final rule is far narrower than the proposal. Health Affairs Forefront reports that coverage fell to about 3 percent of eligible Part B drug spending, down from about 54 percent, and projected federal savings dropped to $440 million from $11.9 billion. Orphan-only drugs, cell and gene therapies and plasma-derived products are now excluded, and manufacturers in the Medicaid GENEROUS model can receive waivers. CMS estimates as few as four manufacturers may be covered. PhRMA sued about a week after finalization.",
+      "Narrow does not mean irrelevant. The benchmark design matters more than today's drug list. By default, CMS estimates the lowest country-level price, largely from public and list prices. A manufacturer can instead submit volume-weighted net prices, which Skadden notes must account for discounts, free goods, chargebacks and rebates. That option only helps if the company can produce clean, defensible net prices by country and by unit.",
+      "This is where AI belongs, and where it does not. Model N, a pricing software vendor, argues that spreadsheets cannot keep up with granular, constantly changing international pricing data. I agree with the diagnosis. In my view, AI can help monitor reference-country price changes, flag unit and pack-size mismatches, and draft scenario summaries. It cannot fix a net price that was never reconciled across affiliates. The inputs have to be governed first.",
+      "For MA&R analytics teams, the practical step is a GLOBE readiness view, even if no current product qualifies: Part B spend against the $100 million threshold, the exclusion logic, and an international price file mapped to U.S. units with the GDP(PPP) adjustment. Build it with global pricing and legal, keep an audit trail, and treat the default lowest-price benchmark as the downside case in gross-to-net forecasts. The models will keep changing. The data discipline carries over."
+    ],
+    "sources": [
+      {
+        "title": "Health Affairs Forefront: Administration Finalizes Medicare Part B International Reference Pricing Model (Oct 2026)",
+        "url": "https://www.healthaffairs.org/content/forefront/administration-finalizes-medicare-part-b-international-reference-pricing-model"
+      },
+      {
+        "title": "Skadden: CMS Finalizes the GLOBE Model: A Most-Favored-Nation Drug Payment Framework for Medicare Part B (Oct 2026)",
+        "url": "https://www.skadden.com/insights/publications/2026/10/cms-finalizes-the-globe-model"
+      },
+      {
+        "title": "Model N: The U.S. price shield is gone. Are you ready for most favored nation? (May 2026)",
+        "url": "https://www.modeln.com/blog/the-us-price-shield-is-gone-are-you-ready-for-most-favored-nation/"
+      }
+    ]
   }
 ]
