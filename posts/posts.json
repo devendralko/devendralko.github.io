@@ -290,5 +290,33 @@
         "url": "https://www.modeln.com/blog/the-us-price-shield-is-gone-are-you-ready-for-most-favored-nation/"
       }
     ]
+  },
+  {
+    "slug": "2026-10-26-patient-support-ai-efficiency-to-accountability",
+    "date": "2026-10-26",
+    "title": "Patient support AI is moving from efficiency to accountability. Hub data needs to keep up.",
+    "summary": "IQVIA's look-back on 2026 patient support says programs are now judged on time to therapy, and that AI in benefits verification and patient finance faces real scrutiny. Access analytics teams should own the measurement.",
+    "tags": [
+      "Patient Services",
+      "Hub Data",
+      "AI Governance"
+    ],
+    "body": [
+      "Patient support is changing what it gets judged on. In an October look-back on its 2026 predictions, IQVIA's patient support leaders say programs are shifting from activity counts to access progress: how quickly a patient moves from prescription to therapy. The metrics they name are benefits verification turnaround, prior authorization submission and resolution, and where patients hit barriers.",
+      "AI is taking on the routine work. IQVIA describes intake, documentation, status updates and appropriate self-service moving to technology, while people keep judgment, exceptions, relationships and escalation. The next step it describes is proactive support, using predictive signals, next-best actions and program data to find barriers early.",
+      "The harder message is about scrutiny. IQVIA says data use, governance and integrity in benefits verification and AI-driven patient finance are under closer review, and that buyers want evidence of how automation performs across their own patient population and payer mix before they change staffing. It calls this a move from AI efficiency to AI accountability. It also expects PBM transparency changes to turn patient support into an analytics layer for benefit verification, deductible reconciliation, appeals and payer-level reporting.",
+      "Manufacturers are also pulling more of this closer. A Pharmaceutical Commerce roundtable, citing a Cardinal Health survey, reports that 39% of executives felt leadership pressure to move hub functions in-house, up from 28% in 2024. The same piece cites IQVIA data that an average of 35% of first-year prescriptions were filled across 99 novel medicines. That is the gap all of this is meant to close.",
+      "For MA&R analytics teams, the hub is now a data product, not a monthly vendor report. Build a time-to-therapy view at the case level, cut by payer, channel and plan type. Ask hub partners for stage timestamps and reason codes in a defined schema. Set baselines before any AI rollout so performance can be checked by payer mix and patient segment. And keep an audit trail for automated benefits and affordability decisions. When compliance asks how the automation performed, the answer should already be in the data."
+    ],
+    "sources": [
+      {
+        "title": "IQVIA: 2026 patient support predictions: A look back (Oct 2026)",
+        "url": "https://www.iqvia.com/locations/united-states/blogs/2026/10/2026-patient-support-predictions"
+      },
+      {
+        "title": "Pharmaceutical Commerce: Roundtable: Patient Services Leaders on the Pressures Shaping Hubs in 2026 (Jun 2026)",
+        "url": "https://www.pharmaceuticalcommerce.com/view/roundtable-patient-services-leaders-on-the-pressures-shaping-hubs-in-2026"
+      }
+    ]
   }
 ]
