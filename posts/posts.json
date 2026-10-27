@@ -318,5 +318,37 @@
         "url": "https://www.pharmaceuticalcommerce.com/view/roundtable-patient-services-leaders-on-the-pressures-shaping-hubs-in-2026"
       }
     ]
+  },
+  {
+    "slug": "2026-10-27-physicians-check-ai-before-prescribing-access-evidence",
+    "date": "2026-10-27",
+    "title": "Physicians now check AI before they prescribe. Access evidence has to be readable by machines.",
+    "summary": "New Bain and IQVIA research shows AI tools are becoming a regular stop in clinical decisions. For MA&R, the question is whether HEOR and real-world evidence actually show up in those answers.",
+    "tags": [
+      "HEOR & RWE",
+      "Evidence",
+      "AI tools"
+    ],
+    "body": [
+      "Bain published a brief on October 26 with a number access teams should notice. The share of US physicians who rank AI among their top three sources for prescribing decisions rose from 3% in December 2024 to 20% in June 2026, according to Bain's surveys. About one-third say their organization uses AI clinical decision support tools such as UpToDate and OpenEvidence, and more than half of those users consult them multiple times a day.",
+      "IQVIA sees the same shift from the question side. Its 2026 survey of 23,769 physicians across 34 markets found 80% used at least one AI tool. In an analysis of more than 2,000 HCP prompts from France, Germany and the UK, guidelines were the largest topic, followed by treatment selection and diagnosis, and almost one-third of topics were patient-specific. IQVIA also notes that payers may bring their own questions to these tools.",
+      "Most of the commentary frames this as a brand visibility issue. I think it is also an evidence issue for MA&R. Bain recommends evidence portfolios that cover more patient subtypes and real-world scenarios, structured so AI tools can retrieve and apply them. That is the same evidence HEOR and RWE teams build for payers and P&T committees. Precision AQ has suggested that health-system P&T committees may use AI evidence platforms as a reference point. It labels that a hypothesis, and it should be treated as one.",
+      "The risk is quiet. If a subgroup analysis or a real-world outcomes study is hard to find or hard to parse, it may simply not appear in the answer. Nobody issues a denial. The evidence just does not show up.",
+      "For MA&R analytics teams, the practical step is to start measuring. Run a fixed set of access-relevant questions, such as place in therapy, subpopulations and comparative real-world outcomes, through the major tools each quarter and log which sources get cited. Make sure published HEOR and RWE work exists in structured, indexable formats. Keep the work to evidence stewardship, correcting errors rather than promoting, with medical and compliance in the loop. AI answers are now another channel where evidence lands. Track it like one."
+    ],
+    "sources": [
+      {
+        "title": "Bain & Company: AI Is in the Exam Room. Pharma Needs an Integrated Plan (Oct 2026)",
+        "url": "https://bain.com/insights/ai-is-in-the-exam-room-pharma-needs-an-integrated-plan"
+      },
+      {
+        "title": "IQVIA: Beyond GEO: Turning AI Conversations into Strategic Intelligence (Oct 2026)",
+        "url": "https://www.iqvia.com/en-gb/locations/emea/blogs/2026/10/beyond-geo-turning-ai-conversations-into-strategic-intelligence"
+      },
+      {
+        "title": "Precision AQ: What Physicians See When They Search Your Drug and Why It Probably Isn't What You Think (Mar 2026)",
+        "url": "https://www.precisionaq.com/blog/what-physicians-see-when-they-search-your-drug"
+      }
+    ]
   }
 ]
