@@ -350,5 +350,37 @@
         "url": "https://www.precisionaq.com/blog/what-physicians-see-when-they-search-your-drug"
       }
     ]
+  },
+  {
+    "slug": "2026-10-28-ai-in-heor-faster-not-truer",
+    "date": "2026-10-28",
+    "title": "AI is making HEOR faster. The evidence says it is not yet making it truer.",
+    "summary": "A new scoping review finds AI gains in health economics and outcomes research are real for extraction and screening, but unproven where the answer is a causal estimate. Access teams should split their AI work along that line.",
+    "tags": [
+      "HEOR",
+      "Real-World Evidence",
+      "AI Validation"
+    ],
+    "body": [
+      "A scoping review published in the Journal of Health Economics and Outcomes Research on October 15, titled \"Faster but Not Truer,\" mapped 2,476 PubMed records on AI in HEOR from 2010 to 2025. Annual output grew from 29 records to 852. Only 17 records, or 0.7%, were validation studies.",
+      "The review finds gains where there is a ground truth to check against. In one cited study of 12,814 extractions across 107 trials, Claude 3.5 reached 96.2% accuracy, human extractors 95.3%, and humans assisted by the model 97.9%. Causal questions are different. In an emulation of the PARADIGM-HF trial, which reported a hazard ratio of 0.81, a model with an AUC of 0.95 produced 0.61, while a weaker model produced 0.93. The author's conclusion: predictive performance repeatedly fails to predict evidentiary performance. He also could not document any regulator or HTA body explicitly accepting or rejecting an AI-derived endpoint.",
+      "The cost side tells a similar story. A ConnectHEOR abstract for ISPOR Europe 2026 reviewed AI-assisted deliverables and found that counting only junior analyst hours overstated the benefit in every one. Effort shifted to senior reviewers. Net economics were strongly favorable for repeatable, high-volume tasks, and much weaker for one-off, judgment-heavy work.",
+      "Komodo Health's Ashis Das, writing after ISPOR 2026, notes that AI topped ISPOR's HEOR Trends report for the first time, yet there is still no consensus on how to validate AI-generated HEOR outputs. He argues for experts making calls at defined points in the workflow, not a human check bolted on at the end.",
+      "For MA&R analytics teams, the practical move is to sort the work. Literature screening, data extraction, and payer policy abstraction have checkable answers. Automate them, sample the output, and publish measured error rates. Comparative effectiveness from claims, budget impact assumptions, and other counterfactual work need senior methodologists owning design and benchmarking results against known trial or historical estimates. Plan and budget that review time up front. It is where the real cost now sits."
+    ],
+    "sources": [
+      {
+        "title": "Journal of Health Economics and Outcomes Research: Faster but Not Truer, Part 1: A Systematic Scoping Review of Artificial Intelligence in Health Economics and Outcomes Research (Oct 2026)",
+        "url": "https://jheor.org/article/171937-faster-but-not-truer-part-1-a-systematic-scoping-review-of-artificial-intelligence-in-health-economics-and-outcomes-research"
+      },
+      {
+        "title": "ISPOR: Delivered in an Hour, but at What Cost? The Silent Costs of AI in HEOR and the Case for Outcome-Based Pricing (Nov 2026)",
+        "url": "https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2026/poster-session-4-4/delivered-in-an-hour-but-at-what-cost-the-silent-costs-of-ai-in-heor-and-the-case-for-outcome-based-pricing"
+      },
+      {
+        "title": "Komodo Health: AI in HEOR: What ISPOR 2026 Revealed (May 2026)",
+        "url": "https://www.komodohealth.com/perspectives/ai-in-heor-what-ispor-2026-revealed/"
+      }
+    ]
   }
 ]
