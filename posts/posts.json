@@ -382,5 +382,41 @@
         "url": "https://www.komodohealth.com/perspectives/ai-in-heor-what-ispor-2026-revealed/"
       }
     ]
+  },
+  {
+    "slug": "2026-10-29-states-require-human-behind-ai-coverage-denials",
+    "date": "2026-10-29",
+    "title": "Eight states now require a human behind AI coverage denials. Access teams should read denial data differently.",
+    "summary": "A new state legislation report counts eight states that bar health insurers from relying solely on AI for adverse coverage decisions. For MA&R analytics, that turns state of residence into a variable in prior authorization and denial trends.",
+    "tags": [
+      "Prior authorization",
+      "Payer policy",
+      "AI regulation"
+    ],
+    "body": [
+      "On October 27 the Transparency Coalition released its 2026 State AI Legislation Report, counting 115 new AI laws across 30 states this year. One category matters directly to market access: eight states (Alabama, Colorado, Georgia, Illinois, Indiana, Iowa, Utah and Washington) enacted laws limiting the ability of health insurers to rely solely on AI or automated systems for adverse authorization or coverage decisions.",
+      "The details differ by state. The Coalition's earlier mid-year summary notes that Alabama requires insurers to disclose AI use and have denials made by a licensed physician or health professional, effective October 1, 2026. Colorado requires decisions to reflect the individual patient's history rather than group data alone. Georgia and Utah take effect January 1, 2027. The National Law Review reports that Washington goes furthest on transparency: carriers must report to the insurance commissioner the percentage of prior authorization denials aided by AI, and Utah insurers must disclose AI use to the state insurance department.",
+      "None of this bans AI in utilization review. Payers can still use it to triage and approve. What changes is the path to a denial, which now needs a qualified human in the loop. That can affect turnaround times, denial rationale language and how often first-pass decisions hold on appeal.",
+      "The landscape is not settled. TechTimes, covering the same report, notes Congress has passed no federal AI law and a DOJ task force has been challenging state AI laws in court. State insurance rules also generally do not reach self-funded employer plans, so the effect will be uneven across a brand's covered lives.",
+      "For MA&R analytics teams, the practical step is to stop treating prior authorization and denial trends as purely payer-level. Tag hub, specialty pharmacy and PA data by patient state and plan funding type, mark each law's effective date, and watch for breaks in approval rates, time to decision and appeal overturns. Washington's AI-aided denial reporting, if made public, could become a new input to payer intelligence. Build the baseline now, before the January 2027 effective dates make before-and-after comparisons harder."
+    ],
+    "sources": [
+      {
+        "title": "Transparency Coalition: 2026 AI Legislation Report finds 115 new laws in 30 states (Oct 2026)",
+        "url": "https://www.transparencycoalition.ai/news/2026-tcai-state-ai-legislation-report-2026-full-year"
+      },
+      {
+        "title": "Transparency Coalition: States have passed 14 new laws this year regulating the use of AI in healthcare (Jul 2026)",
+        "url": "https://www.transparencycoalition.ai/news/state-lawmakers-have-passed-15-new-laws-regulating-the-use-of-ai-in-health-care"
+      },
+      {
+        "title": "National Law Review: Additional states continue legislative trend of new laws limiting use of artificial intelligence (Jul 2026)",
+        "url": "https://natlawreview.com/article/additional-states-continue-legislative-trend-new-laws-limiting-use-artificial"
+      },
+      {
+        "title": "TechTimes: Record 115 State AI Laws in 2026: Illinois Sets Frontier Audit Mandate, Congress Still Silent (Oct 2026)",
+        "url": "https://techtimes.com/articles/329592/20261027/record-115-state-ai-laws-2026-illinois-sets-frontier-audit-mandate-congress-still-silent.htm"
+      }
+    ]
   }
 ]
