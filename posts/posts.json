@@ -418,5 +418,37 @@
         "url": "https://techtimes.com/articles/329592/20261027/record-115-state-ai-laws-2026-illinois-sets-frontier-audit-mandate-congress-still-silent.htm"
       }
     ]
+  },
+  {
+    "slug": "2026-10-30-part-b-negotiated-prices-buy-and-bill-analytics",
+    "date": "2026-10-30",
+    "title": "Part B negotiated prices land by November 30. Buy-and-bill analytics needs to be ready first.",
+    "summary": "The third Medicare negotiation cycle brings Part B drugs into scope for the first time. The data signals will be fragmented, so access and trade analytics teams should build the scenario models and early-warning views now.",
+    "tags": [
+      "IRA",
+      "Part B",
+      "Trade analytics"
+    ],
+    "body": [
+      "CMS is due to publish negotiated prices for the third cycle of Medicare drug price negotiation by November 30, according to Milliman. For the first time, the list includes Part B drugs. Milliman names Botox, Cimzia, Entyvio, Orencia and Xolair among them. The prices take effect January 1, 2028.",
+      "The mechanics matter more than the headline discount. Avalere Health notes that Medicare fee-for-service will pay providers 106% of the maximum fair price, replacing ASP plus 6%. Milliman adds that prices from the first two cycles reflected average list price discounts of about 60%, that ASP itself will fall as negotiated prices enter the average, and that CMS will not publish ASP for negotiated drugs. Milliman expects 340B hospitals to see the largest margin loss.",
+      "Behavior will follow margin. In an Avalere survey of more than 300 practices, reported by Managed Healthcare Executive, 92% said they were somewhat or very likely to stop stocking negotiated Part B drugs. Both Avalere and Milliman flag possible site-of-care shifts, and commercial and Medicare Advantage contracts pegged to Medicare rates or ASP that may need renegotiation.",
+      "The data will not arrive cleanly. Milliman notes that Part B claims process with a lag and that effectuation guidance for Part B is still in draft. Avalere notes it is unclear how negotiated prices will flow into Medicare Advantage benchmarks and risk adjustment. Early signals will show up first in specialty distributor sales, site-of-care mix and plan medical policy, well before they show up in claims.",
+      "For MA&R analytics teams, the work starts now. Build the scenario model with the negotiated price as a variable and flag every ASP-linked contract. Set up account-level views of ordering by site of care using trade and distribution data. AI tools can help monitor medical policy and contract language changes at scale, but the value depends on having account, contract and claims data joined before the prices publish. Keep people accountable for the assumptions."
+    ],
+    "sources": [
+      {
+        "title": "Milliman: MFPs beyond Part D: What maximum fair prices mean for Part B stakeholders (Oct 2026)",
+        "url": "https://www.milliman.com/en/insight/mfps-beyond-part-d-maximum-fair-prices-part-b-stakeholders"
+      },
+      {
+        "title": "Avalere Health: Part B negotiated drug prices: How Medicare Advantage plans should prepare (Jul 2026)",
+        "url": "https://avalerehealth.com/thought-leadership/part-b-negotiated-drug-prices-how-medicare-advantage-plans-should-prepare/"
+      },
+      {
+        "title": "Managed Healthcare Executive: Survey: Part B price negotiation could have significant impact on providers (Sep 2025)",
+        "url": "https://www.managedhealthcareexecutive.com/view/survey-part-b-price-negotiation-could-have-significant-impact-on-providers"
+      }
+    ]
   }
 ]
