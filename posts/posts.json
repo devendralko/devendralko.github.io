@@ -482,5 +482,37 @@
         "url": "https://www.pharmexec.com/view/median-drug-launch-prices-access-barriers-icer-west-health-report-"
       }
     ]
+  },
+  {
+    "slug": "2026-11-01-medicare-ai-prior-auth-pilot-cut-services-measure-it-right",
+    "date": "2026-11-01",
+    "title": "Medicare's AI prior auth pilot cut some services by nearly 20%. Access teams should copy how it was measured.",
+    "summary": "The first independent study of Medicare's WISeR pilot shows AI-enabled prior authorization reduced targeted services, with the effect fading over time. The method behind that finding is the real lesson for access analytics.",
+    "tags": [
+      "Prior authorization",
+      "Payer AI",
+      "Medicare"
+    ],
+    "body": [
+      "In January 2026, CMS launched WISeR, a six-year pilot that uses technology vendors, including AI-enabled ones, to run prior authorization for selected services in traditional Medicare across six states. It does not target drugs. But it is the largest public test so far of payer AI applied to utilization, and the first independent results are now out.",
+      "A JAMA research letter published October 26 by researchers at the University of Minnesota and Brown University looked at the first six months, as reported by Becker's Payer Issues. Compared with trends in other states, monthly epidural steroid injections fell 15% and other targeted services fell nearly 20%. The effect was strongest right after launch. Epidural injections dropped about 21% in the first quarter and about 9% in the second. Services with delayed WISeR implementation, used as a negative control, showed no significant change. The lead author noted that the study cannot say whether the care that disappeared was wasteful or needed.",
+      "The operating picture is less tidy. Records obtained by the Electronic Frontier Foundation through a FOIA lawsuit show two vendors denied 5,944 requests in the first three months, and one request went unanswered for 83 days against a 72-hour standard. EFF reports that vendors are paid for denials but not for denials reversed on appeal, and that low quality scores cut payment by only 5-10%. CMS says a qualified human clinician must review all denials.",
+      "A drop in volume is easy to see. Whether the drop is appropriate is much harder to prove. And an effect that fades within two quarters suggests providers adapt their requests to the new process.",
+      "For MA&R analytics teams, the lesson is method. When a payer adds automated review to your category, do not settle for a single before-and-after chart. Use comparison plans or geographies, a negative control, and quarter-by-quarter trends. Track turnaround time and appeal overturn rates next to approval rates, because that is where incentive problems show up first. And keep a current map of which plans use automated review, so a shift in pull-through can be traced to its cause."
+    ],
+    "sources": [
+      {
+        "title": "Becker's Payer Issues: Medicare's AI-enabled prior authorization pilot linked to nearly 20% drop in some services (Oct 2026)",
+        "url": "https://www.beckerspayer.com/research-analysis/medicares-ai-enabled-prior-authorization-pilot-linked-to-nearly-20-drop-in-some-services/"
+      },
+      {
+        "title": "Electronic Frontier Foundation: New Records Reveal Problems with Medicare's AI Prior Authorization Experiment (Sep 2026)",
+        "url": "https://eff.org/deeplinks/2026/09/new-records-reveal-problems-medicares-ai-prior-authorization-experiment"
+      },
+      {
+        "title": "Tech Times: Medicare AI Prior Auth: CMS Penalized Four Vendors in Secret as Delays Harmed Seniors (Oct 2026)",
+        "url": "https://www.techtimes.com/articles/329576/20261028/medicare-ai-prior-auth-cms-penalized-four-vendors-secret-delays-harmed-seniors.htm"
+      }
+    ]
   }
 ]
